@@ -3,10 +3,19 @@
 
 ## Integrantes
 
+Sofy Parra
+
+Carlos Sierra
+
+Edisson Fonseca
 
 ## Documentación
 
 
+## Diagramas
+
+### Diagramas
+![Esquematico uart]()
 ## Implmentación
 
 
