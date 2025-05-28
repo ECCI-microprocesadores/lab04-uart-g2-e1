@@ -15,7 +15,7 @@ Edisson Fonseca
 ## Diagramas
 
 ### Diagramas
-![Esquematico uart]()
+![Esquematico uart](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/b590df00dbe48c9765f13c197b50395f50089645/imagenes/UART.png)
 ## Implmentación
 
 
