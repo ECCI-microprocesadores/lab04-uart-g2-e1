@@ -10,6 +10,15 @@ Carlos Sierra
 Edisson Fonseca
 
 ## Documentación
+Implementamos  un programa el cual nos permite leer el valor de una señal analógica a través del módulo ADC del microcontrolador PIC18F45K22, convertir este valor a voltaje y enviarlo mediante comunicación serial UART al monitor serial el cual se puede visualizar ya sea en el monitor serial de Arduino o en este caso por medio del programa putty. 
+
+### Inicialización del sistema:
+1. Confirguramos el  oscilador interno a 16 MHz.
+2. Se inicializan los módulos UART y ADC.
+### Lectura del ADC:
+1. Lee una señal analógica conectada al pin RA0 (AN0) del microcontrolador.
+2. El valor que lee  es un número entre 0 y 1023 (resolución de 10 bits).
+3. Este valor es convertido a voltaje usando la fórmula:
 
 
 ## Diagramas
