@@ -22,6 +22,13 @@ Implementamos  un programa el cual nos permite leer el valor de una señal anal�
 
 ![Esquematico uart](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/b0cf529045f8000e33a2f0713ee7b01376f31af2/imagenes/formula.png)
 
+### Envío por UART:
+1. Se usa ```c sprintf()``` para formatear una cadena de texto con el valor ADC y el voltaje calculado.
+2. Se transmite esta cadena por el puerto serial (UART) usando 
+```c
+cUART_WriteString().
+```
+
 ## Diagramas
 
 ### Diagrama esquematico
