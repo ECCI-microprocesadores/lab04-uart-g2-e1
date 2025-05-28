@@ -19,6 +19,7 @@ Implementamos  un programa el cual nos permite leer el valor de una señal anal�
 1. Lee una señal analógica conectada al pin RA0 (AN0) del microcontrolador.
 2. El valor que lee  es un número entre 0 y 1023 (resolución de 10 bits).
 3. Este valor es convertido a voltaje usando la fórmula:
+
 ![Esquematico uart](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/b0cf529045f8000e33a2f0713ee7b01376f31af2/imagenes/formula.png)
 
 ## Diagramas
