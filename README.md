@@ -59,7 +59,7 @@ UART_WriteString(buffer);
 
 u → Tipo de dato: entero sin signo (uint16_t).
 
-✅ Si adc_val = 23, se imprimirá como:
+#### Si adc_val = 23, se imprimirá como:
 Adc:0023
 %.2f
 Este es un formato de impresión para números de punto flotante (float), y se desglosa así:
@@ -70,7 +70,7 @@ Este es un formato de impresión para números de punto flotante (float), y se d
 
 f → Tipo de dato: float (número real).
 
-✅ Si volt = 3.45678, se imprimirá como:
+#### Si volt = 3.45678, se imprimirá como:
     Voltaje:3.46
 #### Finalmente podremos visualizarlo de la siguiente manera: 
 Adc:0235 Voltaje:1.15V  (Monitor serial Putty)
