@@ -84,6 +84,7 @@ Adc:0235 Voltaje:1.15V  (Monitor serial Putty)
 ### Visualiacion en Putty:
 El potenciómetro funciona como un divisor de voltaje. Al girar el eje, el voltaje en el pin RA0 varía de 0V a 5V, lo que se refleja en la lectura del ADC y en el monitor serial.
 
+![Montaje](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/365eb9a2899050800385e345c309ec9f2af0b8f0/imagenes/addd.png)
 
 ## Diagramas
 
