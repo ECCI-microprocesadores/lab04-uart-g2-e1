@@ -24,7 +24,7 @@ Implementamos  un programa el cual nos permite leer el valor de una señal anal�
 
 ### Envío por UART:
 1. Se usa ```c sprintf()``` para formatear una cadena de texto con el valor ADC y el voltaje calculado.
-2. Se transmite esta cadena por el puerto serial (UART) usando ```c UART_WriteString().```
+2. Se transmite esta cadena por el puerto serial (UART) usando ``` UART_WriteString().```
 
 ## Diagramas
 
