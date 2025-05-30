@@ -25,6 +25,18 @@ Implementamos  un programa el cual nos permite leer el valor de una señal anal�
 ### Envío por UART:
 1. Se usa ```c sprintf()``` para formatear una cadena de texto con el valor ADC y el voltaje calculado.
 2. Se transmite esta cadena por el puerto serial (UART) usando ``` UART_WriteString().```
+### Codigo:
+ Definimos que el  PIC está trabajando con una frecuencia de 16 MHz
+ ```#define _XTAL_FREQ 16000000UL``` 
+ Inicializacion del sistema de lectura:
+1. Registro OSCCON nos permite el control del oscilador, nos permite establecer la velocidad (frecuencia) del reloj
+```c OSCCON = 0b01110010;```
+2. Inicializa el módulo de comunicación serial (UART) y el módulo de conversión analógica-digital (ADC).
+```c 
+UART_Init()
+ADC_Init()
+```
+
 
 ## Implementación: 
 ![Montaje](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/e5e83744b1f735c9da46457d89507e6abeb4b129/imagenes/ImplementacionUART.png)
