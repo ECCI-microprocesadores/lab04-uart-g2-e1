@@ -84,6 +84,8 @@ El potenciómetro funciona como un divisor de voltaje. Al girar el eje, el volta
 ### Visualiacion en Putty:
 ![VisualizacionPutty](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/7ad270ec55b76cc3f9ace54f70b7ac90650bdebd/imagenes/adc%20y%20voltaje.png)
 
+![VisualizacionPutty](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/24570b5aa54acf4a9c813165724c758643f7b0a3/imagenes/adcc.png)
+
 ## Diagramas
 
 ### Diagrama esquematico
