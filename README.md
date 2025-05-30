@@ -26,6 +26,9 @@ Implementamos  un programa el cual nos permite leer el valor de una se√±al anal√
 1. Se usa ```c sprintf()``` para formatear una cadena de texto con el valor ADC y el voltaje calculado.
 2. Se transmite esta cadena por el puerto serial (UART) usando ``` UART_WriteString().```
 
+### Visualiacion en Putty:
+![VisualizacionPutty](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/7ad270ec55b76cc3f9ace54f70b7ac90650bdebd/imagenes/adc%20y%20voltaje.png)
+
 ## Diagramas
 
 ### Diagrama esquematico
@@ -33,6 +36,9 @@ Implementamos  un programa el cual nos permite leer el valor de una se√±al anal√
 ![Esquematico uart](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/b590df00dbe48c9765f13c197b50395f50089645/imagenes/UART.png)
 
 ### Diagrama de flujo
-## Implmentaci√≥n
+![Diagrama de flujo](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/7ad270ec55b76cc3f9ace54f70b7ac90650bdebd/imagenes/flujoUART.png)
+
+
+
 
 
