@@ -34,7 +34,6 @@ Implementamos  un programa el cual nos permite leer el valor de una señal anal�
 
 ### Diagrama de flujo
 
-
 ## Implmentación
 
 
