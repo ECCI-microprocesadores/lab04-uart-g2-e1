@@ -73,8 +73,9 @@ f → Tipo de dato: float (número real).
 #### Si volt = 3.45678, se imprimirá como:
     Voltaje:3.46
 #### Finalmente podremos visualizarlo de la siguiente manera: 
+```c 
 Adc:0235 Voltaje:1.15V  (Monitor serial Putty)
-
+```
 
 ## Implementación: 
 El potenciómetro funciona como un divisor de voltaje. Al girar el eje, el voltaje en el pin RA0 varía de 0V a 5V, lo que se refleja en la lectura del ADC y en el monitor serial.
@@ -82,7 +83,7 @@ El potenciómetro funciona como un divisor de voltaje. Al girar el eje, el volta
 ![Montaje](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/e5e83744b1f735c9da46457d89507e6abeb4b129/imagenes/ImplementacionUART.png)
 
 ### Visualiacion en Putty:
-![VisualizacionPutty]()
+![VisualizacionPutty](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/49305b19e556a9b4de91431674d5bf7b726e9083/imagenes/addcc.png)
 ![VisualizacionPutty](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/7ad270ec55b76cc3f9ace54f70b7ac90650bdebd/imagenes/adc%20y%20voltaje.png)
 
 ![VisualizacionPutty](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/24570b5aa54acf4a9c813165724c758643f7b0a3/imagenes/adcc.png)
