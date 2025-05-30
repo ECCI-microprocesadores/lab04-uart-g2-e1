@@ -30,15 +30,55 @@ Implementamos  un programa el cual nos permite leer el valor de una señal anal�
  ```#define _XTAL_FREQ 16000000UL``` 
  Inicializacion del sistema de lectura:
 1. Registro OSCCON nos permite el control del oscilador, nos permite establecer la velocidad (frecuencia) del reloj
-```c OSCCON = 0b01110010;```
+```c 
+OSCCON= 0b01110010
+```
 2. Inicializa el módulo de comunicación serial (UART) y el módulo de conversión analógica-digital (ADC).
 ```c 
 UART_Init()
 ADC_Init()
 ```
+3. Lee el valor digital (entre 0–1023)desde el canal AN0.
+```c 
+uint16_t adc_val = ADC_Read();
+```
+4. Convierte el valor digital a voltaje real (0–5V), suponiendo una referencia de voltaje de 5V
+```c 
+float volt = (adc_val * 5.0f) / 1023.0f;
+```
+5. Formatea y transmite por UART el valor leido y el voltaje en formato legible.
+```c 
+sprintf(buffer, "Adc:%04u Voltaje:%.2fV\r\n", adc_val, volt);
+UART_WriteString(buffer);
+```
+% → Indica el inicio de un especificador de formato.
+
+0 → Rellena con ceros a la izquierda si el número tiene menos cifras.
+
+4 → Ancho total del número: 4 dígitos como mínimo.
+
+u → Tipo de dato: entero sin signo (uint16_t).
+
+✅ Si adc_val = 23, se imprimirá como:
+Adc:0023
+%.2f
+Este es un formato de impresión para números de punto flotante (float), y se desglosa así:
+
+% → Comienzo del formato.
+
+.2 → Muestra 2 cifras decimales.
+
+f → Tipo de dato: float (número real).
+
+✅ Si volt = 3.45678, se imprimirá como:
+    Voltaje:3.46
+#### Finalmente podremos visualizarlo de la siguiente manera: 
+Adc:0235 Voltaje:1.15V  (Monitor serial Putty)
 
 
 ## Implementación: 
+El potenciómetro funciona como un divisor de voltaje. Al girar el eje, el voltaje en el pin RA0 varía de 0V a 5V, lo que se refleja en la lectura del ADC y en el monitor serial.
+
 ![Montaje](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/e5e83744b1f735c9da46457d89507e6abeb4b129/imagenes/ImplementacionUART.png)
 
 ### Visualiacion en Putty:
