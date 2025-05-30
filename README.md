@@ -26,6 +26,9 @@ Implementamos  un programa el cual nos permite leer el valor de una señal anal�
 1. Se usa ```c sprintf()``` para formatear una cadena de texto con el valor ADC y el voltaje calculado.
 2. Se transmite esta cadena por el puerto serial (UART) usando ``` UART_WriteString().```
 
+## Implementación: 
+![Montaje](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/e5e83744b1f735c9da46457d89507e6abeb4b129/imagenes/ImplementacionUART.png)
+
 ### Visualiacion en Putty:
 ![VisualizacionPutty](https://github.com/ECCI-microprocesadores/lab04-uart-g2-e1/blob/7ad270ec55b76cc3f9ace54f70b7ac90650bdebd/imagenes/adc%20y%20voltaje.png)
 
